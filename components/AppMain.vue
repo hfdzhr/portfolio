@@ -202,24 +202,42 @@
               CONTACT
             </h2>
           </div>
-          <form action="" class="font-ws">
+          <Form
+            class="font-ws"
+            :validation-schema="validationSchema"
+            @submit="submit"
+          >
             <div class="hero-content flex-col lg:flex-row lg:items-start">
               <div class="w-full mb-4 lg:mb-0 lg:mr-4">
-                <input
+                <Field
                   type="text"
+                  name="fullName"
+                  id="fullName"
                   placeholder="Full Name"
+                  v-model="fullName"
                   class="input input-bordered input-primary placeholder-black w-full my-2"
                 />
-                <input
+                <ErrorMessage name="fullName" />
+                <Field
                   type="text"
-                  placeholder="E-mail"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject"
+                  v-model="subject"
                   class="input input-bordered input-primary placeholder-black w-full my-2"
                 />
-                <textarea
+                <ErrorMessage name="subject" />
+                <Field
+                  as="textarea"
+                  name="message"
+                  id="message"
+                  v-model="message"
                   class="textarea textarea-primary placeholder-black my-2 w-full text-base"
                   placeholder="Message"
-                ></textarea>
+                ></Field>
+                <ErrorMessage name="message" />
                 <button
+                  type="submit"
                   class="btn my-2 btn-block text-white btn-primary hover:bg-white hover:text-black"
                 >
                   Send
@@ -244,9 +262,44 @@
                 </p>
               </div>
             </div>
-          </form>
+          </Form>
         </div>
       </div>
     </section>
   </main>
 </template>
+
+<script setup>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+import { toTypedSchema } from '@vee-validate/zod';
+import * as zod from 'zod';
+
+const myEmail = 'hafidalazhar5@gmail.com';
+const fullName = ref('');
+const subject = ref('');
+const message = ref('');
+
+const validationSchema = toTypedSchema(
+  zod.object({
+    fullName: zod
+      .string()
+      .min(1, { message: 'Full Name is required' })
+      .max(30, { message: 'Full Name is too long' }),
+    subject: zod
+      .string()
+      .min(1, { message: 'Subject is required' })
+      .max(30, { message: 'Subject is too long' }),
+    message: zod.string().min(1, { message: 'Message is required' }),
+  })
+);
+
+const submit = (values) => {
+  const mailtoLink = `mailto:${myEmail}?subject=${
+    values.subject
+  }&body=${encodeURIComponent(
+    `From: ${values.fullName}\n\nMessage: ${values.message}`
+  )}`;
+
+  window.location.href = mailtoLink;
+};
+</script>
