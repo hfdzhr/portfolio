@@ -1,6 +1,6 @@
 <!-- components/CardLink.vue -->
 <template>
-  <a :class="cardClasses" target="_blank" rel="noopener noreferrer">
+  <div :class="cardClasses">
     <figure
       class="px-12 pt-6 pb-2 w-full aspect-[2/1] items-end overflow-visible"
     >
@@ -16,7 +16,7 @@
     <div class="card-body text-center">
       <span class="font-ws text-lg">{{ label }}</span>
     </div>
-  </a>
+  </div>
 </template>
 
 <script setup>
