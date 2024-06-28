@@ -9,13 +9,25 @@
     <nav
       class="grid-flow-col px-5 gap-4 md:place-self-center md:justify-self-end"
     >
-      <a href="https://www.instagram.com/hafidalazhr" target="_blank">
+      <a
+        href="https://www.instagram.com/hafidalazhr"
+        aria-label="See My Instagram Account"
+        target="_blank"
+      >
         <Icon class="text-white" name="fa6-brands:instagram" size="24px" />
       </a>
-      <a href="https://github.com/hfdzhr" target="_blank">
+      <a
+        href="https://github.com/hfdzhr"
+        aria-label="See My Github Account"
+        target="_blank"
+      >
         <Icon class="text-white" name="fa6-brands:github" size="24px" />
       </a>
-      <a href="https://www.linkedin.com/in/hafidalazhar/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/hafidalazhar/"
+        aria-label="See My Linkedin Account"
+        target="_blank"
+      >
         <Icon class="text-white" name="fa6-brands:linkedin-in" size="24px" />
       </a>
     </nav>
