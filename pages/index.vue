@@ -2,7 +2,13 @@
   <AppLoader v-if="progress" />
   <template v-else>
     <AppHeader />
-    <AppMain />
+    <main>
+      <SectionHero />
+      <SectionAbout />
+      <SectionSkill />
+      <SectionProject />
+      <SectionContact />
+    </main>
     <AppFooter />
   </template>
 </template>
@@ -15,15 +21,14 @@ const { progress, isLoading, start, finish, clear } = useLoadingIndicator({
   estimatedProgress: (duration, elapsed) =>
     (2 / Math.PI) * 100 * Math.atan(((elapsed / duration) * 100) / 50),
 });
+const description =
+  'Welcome to Hafid Al Azhar personal portfolio website. Discover my journey as a passionate web developer and tech enthusiast, showcasing my skills, projects, and experiences in the field of computer science. Explore my latest works, learn about my professional background, and get in touch for collaborations.';
 
 start();
 
 finish();
 
 clear();
-
-const description =
-  'Welcome to Hafid Al Azhar personal portfolio website. Discover my journey as a passionate web developer and tech enthusiast, showcasing my skills, projects, and experiences in the field of computer science. Explore my latest works, learn about my professional background, and get in touch for collaborations.';
 
 useSeoMeta({
   ogTitle: 'Hafid Al Azhar',
