@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     url: 'https://hafidalazhar.vercel.app',
     name: 'Hafid Al Azhar',
     description:
-      'Welcome to Hafid Al Azhar personal portfolio website. Discover my journey as a passionate web developer and tech enthusiast, showcasing my skills, projects, and experiences in the field of computer science. Explore my latest works, learn about my professional background, and get in touch for collaborations.',
+      'Welcome to the personal portfolio of Hafid Al Azhar, a passionate web developer and tech enthusiast. Discover my skills, projects, and experiences in computer science. Get in touch for collaborations.',
     defaultLocale: 'en',
   },
   seo: {

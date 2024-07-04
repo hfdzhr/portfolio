@@ -21,10 +21,10 @@
             <p
               class="font-ws text-base sm:text-2xl font-normal leading-relaxed text-left"
             >
-              I am a passionate web developer and tech enthusiast currently
-              pursuing my studies in computer science. With a keen eye for
-              detail and a love for coding, I strive to create engaging and
-              efficient web applications.
+              I am Hafid Al Azhar, a passionate web developer and tech
+              enthusiast currently pursuing my studies in computer science. With
+              a keen eye for detail and a love for coding, I strive to create
+              engaging and efficient web applications.
               <br />
               <br />
               My journey in the tech world started at a young age, and since
