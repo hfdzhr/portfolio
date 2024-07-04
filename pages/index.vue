@@ -9,11 +9,21 @@
       <SectionProject />
       <SectionContact />
     </main>
+    ink
     <AppFooter />
   </template>
 </template>
 
 <script setup>
+useHead({
+  meta: [
+    {
+      name: 'google-site-verification',
+      content: '0LZ0SzJu15w7oi6WNc6pjlsleS6WKzEXwPdV0_LINhw',
+    },
+  ],
+});
+
 const { progress, isLoading, start, finish, clear } = useLoadingIndicator({
   duration: 2000,
   throttle: 200,
