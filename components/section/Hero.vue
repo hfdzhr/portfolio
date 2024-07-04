@@ -8,10 +8,14 @@
             id="name"
           >
             <span class="text-wrapper">
+              <!-- Fallback Text for SEO and initial view -->
+              <span id="fallback-text">Hafid Al Azhar</span>
+              <!-- GSAP Animated Text -->
               <span
                 v-for="(letter, index) in letters"
                 :key="index"
                 class="letter"
+                :style="{ display: 'none' }"
               >
                 {{ letter === ' ' ? '\u00A0' : letter }}
               </span>
@@ -37,12 +41,24 @@
 
 <script setup>
 import { gsap } from 'gsap';
+import { ref, onMounted } from 'vue';
 
+// Text for GSAP animation
 const text = 'Hafid Al Azhar';
 const letters = ref(text.split(''));
 
 onMounted(() => {
-  const tl = gsap.timeline();
+  // GSAP animation timeline
+  const tl = gsap.timeline({
+    onStart: () => {
+      // Hide fallback text and show animated letters
+      document.getElementById('fallback-text').style.display = 'none';
+      const lettersElements = document.querySelectorAll('.letter');
+      lettersElements.forEach(letter => {
+        letter.style.display = 'inline-block';
+      });
+    }
+  });
 
   tl.fromTo(
     '.letter',

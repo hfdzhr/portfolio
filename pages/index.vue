@@ -9,7 +9,6 @@
       <SectionProject />
       <SectionContact />
     </main>
-    ink
     <AppFooter />
   </template>
 </template>
