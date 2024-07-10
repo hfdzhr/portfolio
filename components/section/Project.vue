@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <div class="bg-base-200 min-h-screen pt-4 lg:pt-10">
+    <div class="min-h-screen pt-4 lg:pt-10">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="divider divider-neutral mb-4 lg:mb-10">
           <h2
@@ -14,7 +14,7 @@
         >
           <img
             src="/ptipd-website.webp"
-            class="w-full max-w-xl shadow-md mb-4 grayscale transition-all duration-200 hover:grayscale-0 lg:mb-0 lg:ml-8"
+            class="w-full max-w-xl shadow-md mb-4 lg:mb-0 lg:ml-8"
             alt="PTIPD Invetory Website"
           />
           <div>
@@ -38,7 +38,7 @@
         >
           <img
             src="/artisanalley-website.webp"
-            class="w-full max-w-xl shadow-md mb-4 grayscale transition-all duration-200 hover:grayscale-0 lg:mb-0"
+            class="w-full max-w-xl shadow-md mb-4 lg:mb-0"
             alt="ArtisanAlley Website"
           />
           <div>

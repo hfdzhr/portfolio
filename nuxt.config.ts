@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   pages: true,
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/google-fonts', '@nuxt/icon', '@nuxtjs/seo'],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/icon', '@nuxtjs/seo', 'nuxt-swiper'],
   postcss: {
     plugins: {
       tailwindcss: {},

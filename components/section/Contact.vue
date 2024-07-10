@@ -1,6 +1,6 @@
 <template>
   <section id="contact">
-    <div class="min-h-[80vh] pt-4 lg:pt-10">
+    <div class="bg-base-200 min-h-[80vh] pt-4 lg:pt-10">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="divider divider-neutral mb-4 lg:mb-10">
           <h2
@@ -22,7 +22,7 @@
                 id="fullName"
                 placeholder="Full Name"
                 v-model="fullName"
-                class="input input-bordered input-primary placeholder-black w-full my-2"
+                class="input input-bordered input-primary bg-base-200 placeholder-black w-full my-2"
               />
               <ErrorMessage name="fullName" />
               <Field
@@ -31,7 +31,7 @@
                 id="subject"
                 placeholder="Subject"
                 v-model="subject"
-                class="input input-bordered input-primary placeholder-black w-full my-2"
+                class="input input-bordered input-primary bg-base-200 placeholder-black w-full my-2"
               />
               <ErrorMessage name="subject" />
               <Field
@@ -39,13 +39,13 @@
                 name="message"
                 id="message"
                 v-model="message"
-                class="textarea textarea-primary placeholder-black my-2 w-full text-base"
+                class="textarea textarea-primary bg-base-200 placeholder-black my-2 w-full text-base"
                 placeholder="Message"
               ></Field>
               <ErrorMessage name="message" />
               <button
                 type="submit"
-                class="btn my-2 btn-block text-white btn-primary hover:bg-white hover:text-black"
+                class="btn my-2 btn-block text-base-200 btn-primary hover:bg-base-200 hover:text-black"
               >
                 Send
                 <Icon

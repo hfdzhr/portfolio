@@ -37,6 +37,13 @@
                 </li>
                 <li>
                   <a
+                    href="#certificate"
+                    @click.prevent="scrollToSection('#certificate')"
+                    >Certification</a
+                  >
+                </li>
+                <li>
+                  <a
                     href="#projects"
                     @click.prevent="scrollToSection('#projects')"
                     >Projects</a
@@ -68,6 +75,13 @@
               <li>
                 <a href="#skills" @click.prevent="scrollToSection('#skills')"
                   >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#certificate"
+                  @click.prevent="scrollToSection('#certificate')"
+                  >Certification</a
                 >
               </li>
               <li>

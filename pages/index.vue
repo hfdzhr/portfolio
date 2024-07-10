@@ -6,6 +6,7 @@
       <SectionHero />
       <SectionAbout />
       <SectionSkill />
+      <SectionCertificate />
       <SectionProject />
       <SectionContact />
     </main>
