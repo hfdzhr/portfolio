@@ -21,6 +21,10 @@ useHead({
       name: 'google-site-verification',
       content: '0LZ0SzJu15w7oi6WNc6pjlsleS6WKzEXwPdV0_LINhw',
     },
+    {
+      name: 'msvalidate.01',
+      content: '675881BAA2B322D4662BE890FE10B9FC',
+    },
   ],
 });
 
