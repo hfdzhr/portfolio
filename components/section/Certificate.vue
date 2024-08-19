@@ -61,6 +61,16 @@
                 UIN SGD Intern Certificate
               </figcaption>
             </swiper-slide>
+            ><swiper-slide
+              ><img
+                src="/plabs-certificate.webp"
+                alt="PLABS.ID Skill Competency Test Certificate Image "
+              />
+              <figcaption class="text-center mt-1 font-ws text-sm md:text-base">
+                PLABS.ID Skill Competency Test
+              </figcaption>
+            </swiper-slide>
+            >
           </swiper>
         </div>
       </div>
