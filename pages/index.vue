@@ -8,6 +8,7 @@
       <SectionSkill />
       <SectionCertificate />
       <SectionProject />
+      <SectionTimeline />
       <SectionContact />
     </main>
     <AppFooter />
