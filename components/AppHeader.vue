@@ -51,6 +51,13 @@
                 </li>
                 <li>
                   <a
+                    href="#timeline"
+                    @click.prevent="scrollToSection('#timeline')"
+                    >Timeline</a
+                  >
+                </li>
+                <li>
+                  <a
                     href="#contact"
                     @click.prevent="scrollToSection('#contact')"
                     >Contact</a
@@ -89,6 +96,13 @@
                   href="#projects"
                   @click.prevent="scrollToSection('#projects')"
                   >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#timeline"
+                  @click.prevent="scrollToSection('#timeline')"
+                  >Timeline</a
                 >
               </li>
               <li>

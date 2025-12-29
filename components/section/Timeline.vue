@@ -26,7 +26,7 @@
                   <div class="text-lg font-bold">SMK Assalaam Bandung</div>
                 </div>
                 <div class="flex items-center md:justify-end mt-1 md:ml-3">
-                  <ul class="list-disc list-inside md:list-outside font-ws text-left">
+                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left">
                     <li>Dasar pemrograman & OOP</li>
                     <li>Web development (JS, HTML, CSS)</li>
                     <li>Database management (MySQL)</li>
@@ -60,7 +60,7 @@
                     <span class="font-medium">(Internship)</span>
                   </div>
                 </div>
-                <div class="flex items-center md:justify-start mt-1 font-ws">
+                <div class="flex items-center md:justify-start mt-1 font-ws text-base sm:text-lg">
                   <ul class="list-disc list-inside">
                     <li>Merancang ERD & ER Diagram</li>
                     <li>Mengembangkan API & Backend</li>
@@ -91,7 +91,7 @@
                   <div class="text-lg font-bold">PT. Digital Amore Kriyanesia</div>
                 </div>
                 <div class="flex items-center md:justify-end mt-2 md:ml-3">
-                  <ul class="list-disc list-inside md:list-outside font-ws text-left">
+                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left">
                     <li>Merancang desain UI & UX</li>
                     <li>Pengembangan web untuk perbankan</li>
                     <li>Berkolaborasi dengan tim backend</li>
