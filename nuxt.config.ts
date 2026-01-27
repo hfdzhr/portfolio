@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     description:
       'Welcome to the personal portfolio of Hafid Al Azhar, a passionate web developer and tech enthusiast. Discover my skills, projects, and experiences in computer science. Get in touch for collaborations.',
     defaultLocale: 'en',
+    indexable: true,
   },
   seo: {
     fallbackTitle: false,

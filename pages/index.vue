@@ -26,6 +26,33 @@ useHead({
       name: 'msvalidate.01',
       content: '675881BAA2B322D4662BE890FE10B9FC',
     },
+    {
+      name: 'keywords',
+      content: 'Hafid Al Azhar, Web Developer, Portfolio, Vue.js, Nuxt.js, Laravel, Full Stack Developer, Computer Science',
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Hafid Al Azhar',
+        url: 'https://hafidalazhar.vercel.app',
+        sameAs: [
+          'https://www.instagram.com/hafidalazhr',
+          'https://github.com/hfdzhr',
+          'https://www.linkedin.com/in/hafidalazhar/',
+        ],
+        jobTitle: 'Web Developer',
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Freelance',
+        },
+        description:
+          'Welcome to Hafid Al Azhar personal portfolio website. Discover my journey as a passionate web developer and tech enthusiast.',
+      }),
+    },
   ],
 });
 

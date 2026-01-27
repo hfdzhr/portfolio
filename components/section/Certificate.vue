@@ -35,40 +35,56 @@
             class="mySwiper"
           >
             <swiper-slide
-              ><img
-                src="/bisaai-nodejs-certificate.webp"
-                alt="Bisa AI Node JS Certificate Image"
-              />
+              ><figure>
+                <img
+                  src="/bisaai-nodejs-certificate.webp"
+                  alt="Bisa AI Node JS Certificate Image"
+                />
 
-              <figcaption class="text-center mt-1 font-ws text-sm md:text-base">
-                BISA.AI Node JS Certificate
-              </figcaption>
+                <figcaption
+                  class="text-center mt-1 font-ws text-sm md:text-base"
+                >
+                  BISA.AI Node JS Certificate
+                </figcaption>
+              </figure>
             </swiper-slide>
             <swiper-slide
-              ><img
-                src="/codepolitan-python-certificate.webp"
-                alt="CodePolitan Python Certificate Image"
-              />
-              <figcaption class="text-center mt-1 font-ws text-sm md:text-base">
-                CodePolitan Python Certificate
-              </figcaption> </swiper-slide
+              ><figure>
+                <img
+                  src="/codepolitan-python-certificate.webp"
+                  alt="CodePolitan Python Certificate Image"
+                />
+                <figcaption
+                  class="text-center mt-1 font-ws text-sm md:text-base"
+                >
+                  CodePolitan Python Certificate
+                </figcaption>
+              </figure> </swiper-slide
             ><swiper-slide
-              ><img
-                src="/ptipd-uinsgd-certificate.webp"
-                alt="PTIPD UIN Sunan Gunung Djati Intern Certificate Image "
-              />
-              <figcaption class="text-center mt-1 font-ws text-sm md:text-base">
-                UIN SGD Intern Certificate
-              </figcaption>
+              ><figure>
+                <img
+                  src="/ptipd-uinsgd-certificate.webp"
+                  alt="PTIPD UIN Sunan Gunung Djati Intern Certificate Image "
+                />
+                <figcaption
+                  class="text-center mt-1 font-ws text-sm md:text-base"
+                >
+                  UIN SGD Intern Certificate
+                </figcaption>
+              </figure>
             </swiper-slide>
             ><swiper-slide
-              ><img
-                src="/plabs-certificate.webp"
-                alt="PLABS.ID Skill Competency Test Certificate Image "
-              />
-              <figcaption class="text-center mt-1 font-ws text-sm md:text-base">
-                PLABS.ID Skill Competency Test
-              </figcaption>
+              ><figure>
+                <img
+                  src="/plabs-certificate.webp"
+                  alt="PLABS.ID Skill Competency Test Certificate Image "
+                />
+                <figcaption
+                  class="text-center mt-1 font-ws text-sm md:text-base"
+                >
+                  PLABS.ID Skill Competency Test
+                </figcaption>
+              </figure>
             </swiper-slide>
             >
           </swiper>
