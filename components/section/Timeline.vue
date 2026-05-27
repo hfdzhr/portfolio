@@ -96,7 +96,8 @@
               </div>
               <ul class="list-disc list-inside font-ws text-base sm:text-lg leading-relaxed space-y-1 mt-3">
                 <li>Designed UI/UX for banking sector web applications</li>
-                <li>Developed frontend using Nuxt.js &amp; Tailwind CSS</li>
+                <li>Developed frontend using Nuxt UI &amp; Bootstrap</li>
+                <li>Built and integrated backend services with Laravel</li>
                 <li>Collaborated with backend team on API integration and deployment</li>
               </ul>
             </div>
