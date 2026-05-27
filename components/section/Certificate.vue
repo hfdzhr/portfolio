@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { certificates } from '~/data/certificates'
+</script>
 
 <template>
   <section id="certificate">
@@ -34,59 +36,16 @@
             :modules="[SwiperEffectCoverflow, SwiperPagination]"
             class="mySwiper"
           >
-            <swiper-slide
-              ><figure>
-                <img
-                  src="/bisaai-nodejs-certificate.webp"
-                  alt="Bisa AI Node JS Certificate Image"
-                />
-
+            <swiper-slide v-for="cert in certificates" :key="cert.id">
+              <figure>
+                <img :src="cert.image" :alt="cert.alt" />
                 <figcaption
                   class="text-center mt-1 font-ws text-sm md:text-base"
                 >
-                  BISA.AI Node JS Certificate
+                  {{ cert.caption }}
                 </figcaption>
               </figure>
             </swiper-slide>
-            <swiper-slide
-              ><figure>
-                <img
-                  src="/codepolitan-python-certificate.webp"
-                  alt="CodePolitan Python Certificate Image"
-                />
-                <figcaption
-                  class="text-center mt-1 font-ws text-sm md:text-base"
-                >
-                  CodePolitan Python Certificate
-                </figcaption>
-              </figure> </swiper-slide
-            ><swiper-slide
-              ><figure>
-                <img
-                  src="/ptipd-uinsgd-certificate.webp"
-                  alt="PTIPD UIN Sunan Gunung Djati Intern Certificate Image "
-                />
-                <figcaption
-                  class="text-center mt-1 font-ws text-sm md:text-base"
-                >
-                  UIN SGD Intern Certificate
-                </figcaption>
-              </figure>
-            </swiper-slide>
-            ><swiper-slide
-              ><figure>
-                <img
-                  src="/plabs-certificate.webp"
-                  alt="PLABS.ID Skill Competency Test Certificate Image "
-                />
-                <figcaption
-                  class="text-center mt-1 font-ws text-sm md:text-base"
-                >
-                  PLABS.ID Skill Competency Test
-                </figcaption>
-              </figure>
-            </swiper-slide>
-            >
           </swiper>
         </div>
       </div>

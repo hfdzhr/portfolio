@@ -9,51 +9,37 @@
             PROJECTS
           </h2>
         </div>
+
         <div
-          class="hero-content flex-col lg:flex-row-reverse items-center lg:items-start"
+          v-for="(project, index) in projects"
+          :key="project.id"
+          class="hero-content flex-col"
+          :class="[
+            index > 0 ? 'mt-5' : '',
+            index % 2 === 0
+              ? 'lg:flex-row-reverse'
+              : 'lg:flex-row',
+            'items-center lg:items-start',
+          ]"
         >
           <img
-            src="/ptipd-website.webp"
-            class="w-full max-w-xl shadow-md mb-4 lg:mb-0 lg:ml-8"
-            alt="PTIPD Invetory Website"
-          />
-          <div>
-            <h2 class="text-3xl font-bold">PTIPD Inventory</h2>
-            <p
-              class="font-ws text-base sm:text-lg mt-5 leading-relaxed text-left"
-            >
-              PTIPD Inventory is an internship project application used to
-              manage computer labs at PTIPD UIN Sunan Gunung Djati.
-            </p>
-            <div class="divider"></div>
-            <p
-              class="font-ws text-base sm:text-lg mt-2 leading-relaxed text-right"
-            >
-              Vue.js | Express.js | MySQL
-            </p>
-          </div>
-        </div>
-        <div
-          class="hero-content mt-5 flex-col lg:flex-row items-center lg:items-start"
-        >
-          <img
-            src="/artisanalley-website.webp"
+            :src="project.image"
+            :alt="project.imageAlt"
             class="w-full max-w-xl shadow-md mb-4 lg:mb-0"
-            alt="ArtisanAlley Website"
+            :class="index % 2 === 0 ? 'lg:ml-8' : ''"
           />
           <div>
-            <h2 class="text-3xl font-bold">ArtisanAlley</h2>
+            <h2 class="text-3xl font-bold">{{ project.title }}</h2>
             <p
               class="font-ws text-base sm:text-lg mt-5 leading-relaxed text-left"
             >
-              ArtisanAlley is a straightforward ecommerce platform created as an
-              internal internship project.
+              {{ project.description }}
             </p>
             <div class="divider"></div>
             <p
               class="font-ws text-base sm:text-lg mt-2 leading-relaxed text-right"
             >
-              Vue.js | Laravel | MySQL
+              {{ project.techStack }}
             </p>
           </div>
         </div>
@@ -61,3 +47,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { projects } from '~/data/projects'
+</script>
