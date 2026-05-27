@@ -1,6 +1,9 @@
 <template>
-  <AppLoader v-if="progress" />
-  <template v-else>
+  <!-- Loader overlay -->
+  <AppLoader :visible="isLoading" :bar-progress="barProgress" />
+
+  <!-- Content selalu di-render, hanya di-hidden oleh loader -->
+  <div :class="{ 'pointer-events-none select-none': isLoading }">
     <AppHeader />
     <main>
       <SectionHero />
@@ -12,10 +15,64 @@
       <SectionContact />
     </main>
     <AppFooter />
-  </template>
+  </div>
 </template>
 
 <script setup>
+const isLoading = ref(true);
+const barProgress = ref(0);
+
+const MIN_LOAD_TIME = 2000;
+let minTimeReached = false;
+let assetsLoaded = false;
+
+function checkDone(interval) {
+  if (assetsLoaded && minTimeReached) {
+    clearInterval(interval);
+    // Progress bar ke 100%
+    barProgress.value = 100;
+
+    // Setelah user lihat 100%, slide loader ke atas
+    setTimeout(() => {
+      isLoading.value = false;
+    }, 400);
+  }
+}
+
+onMounted(() => {
+  const startTime = Date.now();
+
+  // Animasi progress bar
+  const progressInterval = setInterval(() => {
+    const elapsed = Date.now() - startTime;
+    barProgress.value = Math.min(
+      (2 / Math.PI) * 100 * Math.atan(elapsed / 1000),
+      99
+    );
+  }, 50);
+
+  // Minimum display time
+  setTimeout(() => {
+    minTimeReached = true;
+    checkDone(progressInterval);
+  }, MIN_LOAD_TIME);
+
+  // Tunggu semua asset selesai load (gambar, font, dll)
+  const onAssetsLoaded = () => {
+    setTimeout(() => {
+      assetsLoaded = true;
+      checkDone(progressInterval);
+    }, 400);
+  };
+
+  if (document.readyState === 'complete') {
+    onAssetsLoaded();
+  } else {
+    window.addEventListener('load', onAssetsLoaded);
+  }
+});
+
+// --- Head, SEO, Meta ---
 useHead({
   meta: [
     {
@@ -28,7 +85,8 @@ useHead({
     },
     {
       name: 'keywords',
-      content: 'Hafid Al Azhar, Web Developer, Portfolio, Vue.js, Nuxt.js, Laravel, Full Stack Developer, Computer Science',
+      content:
+        'Hafid Al Azhar, Web Developer, Portfolio, Vue.js, Nuxt.js, Laravel, Full Stack Developer, Computer Science',
     },
   ],
   script: [
@@ -56,21 +114,8 @@ useHead({
   ],
 });
 
-const { progress, isLoading, start, finish, clear } = useLoadingIndicator({
-  duration: 2000,
-  throttle: 200,
-
-  estimatedProgress: (duration, elapsed) =>
-    (2 / Math.PI) * 100 * Math.atan(((elapsed / duration) * 100) / 50),
-});
 const description =
   'Welcome to Hafid Al Azhar personal portfolio website. Discover my journey as a passionate web developer and tech enthusiast, showcasing my skills, projects, and experiences in the field of computer science. Explore my latest works, learn about my professional background, and get in touch for collaborations.';
-
-start();
-
-finish();
-
-clear();
 
 useSeoMeta({
   ogTitle: 'Hafid Al Azhar',
@@ -85,7 +130,7 @@ useSeoMeta({
   twitterImage: '/ogimage.png',
   twitterCard: 'summary_large_image',
 });
-``;
+
 useHead({
   htmlAttrs: {
     lang: 'en',

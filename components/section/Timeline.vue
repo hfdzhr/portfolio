@@ -3,98 +3,101 @@
     <div class="min-h-screen pt-4 lg:pt-10">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="divider divider-neutral mb-4 lg:mb-10">
-          <h2 class="text-left text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-ws font-semibold">Timeline</h2>
+          <h2 class="text-left text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-ws font-semibold">EXPERIENCE</h2>
         </div>
         <div class="">
           <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <!-- SMK Assalaam -->
             <li>
               <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <Icon name="tabler:circle-check-filled" class="h-5 w-5 text-primary" />
               </div>
               <div class="timeline-start timeline-box mb-10 md:text-end">
-                <div class="flex justify-between items-center">
-                  <time class="font-mono italic">2021 - 2024</time>
+                <time class="font-ws italic text-base">2021 - 2024</time>
+                <div class="flex items-center gap-3 mt-1 justify-between">
+                  <img
+                    src="/smk-assalaam-logo.webp"
+                    alt="SMK Assalaam Bandung Logo"
+                    class="w-10 h-10 object-contain rounded-md"
+                  />
+                  <div class="text-xl font-bold font-ws">SMK Assalaam Bandung</div>
                 </div>
-                <div class="flex items-center gap-3 mt-1 justify-beetween">
-                  <img src="/smk-assalaam-logo.webp" alt="SMK Assalaam Bandung Logo" class="w-10 h-10 object-contain rounded-md" />
-                  <div class="text-lg font-bold">SMK Assalaam Bandung</div>
-                </div>
-                <div class="flex items-center md:justify-end mt-1 md:ml-3">
-                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left">
-                    <li>Dasar pemrograman & OOP</li>
-                    <li>Web development (JS, HTML, CSS)</li>
-                    <li>Database management (MySQL)</li>
-                    <li>Project berbasis tim</li>
+                <div class="mt-3 md:ml-3">
+                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left leading-relaxed">
+                    <li>Mempelajari dasar pemrograman &amp; OOP</li>
+                    <li>Membangun 5+ project web dengan JavaScript, HTML, &amp; CSS</li>
+                    <li>Mengelola database MySQL untuk aplikasi berbasis web</li>
+                    <li>Menyelesaikan project akhir tim dengan nilai A</li>
                   </ul>
                 </div>
               </div>
-
               <hr />
             </li>
+            <!-- PTIPD UIN SGD -->
             <li>
               <hr />
               <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <Icon name="tabler:circle-check-filled" class="h-5 w-5 text-primary" />
               </div>
               <div class="timeline-end timeline-box md:mb-10">
-                <div class="flex justify-between items-center">
-                  <time class="font-mono italic">2023</time>
-                  <span class="badge badge-outline font-medium font-sans">Backend Developer</span>
+                <div class="flex justify-between items-center flex-wrap gap-2">
+                  <time class="font-ws italic text-base">2023</time>
+                  <span class="badge badge-outline font-ws font-medium">Backend Developer</span>
                 </div>
                 <div class="flex items-center mt-1 gap-3 md:justify-end">
-                  <img src="/ptipd-uin-sgd-logo.webp" alt="PTIPD UIN Sunan Gunung Djati Logo" class="w-10 h-10 object-contain rounded-md" />
-                  <div class="text-lg font-bold">
+                  <img
+                    src="/ptipd-uin-sgd-logo.webp"
+                    alt="PTIPD UIN Sunan Gunung Djati Logo"
+                    class="w-10 h-10 object-contain rounded-md"
+                  />
+                  <div class="text-xl font-bold font-ws">
                     PTIPD UIN Sunan Gunung Djati
-                    <span class="font-medium">(Internship)</span>
+                    <span class="font-normal text-base">(Internship)</span>
                   </div>
                 </div>
-                <div class="flex items-center md:justify-start mt-1 font-ws text-base sm:text-lg">
-                  <ul class="list-disc list-inside">
-                    <li>Merancang ERD & ER Diagram</li>
-                    <li>Mengembangkan API & Backend</li>
-                    <li>Berkoordinasi dengan tim</li>
+                <div class="mt-3 font-ws text-base sm:text-lg">
+                  <ul class="list-disc list-inside leading-relaxed">
+                    <li>Merancang ERD &amp; Entity Relationship Diagram untuk sistem inventory</li>
+                    <li>Mengembangkan REST API menggunakan Express.js &amp; MySQL</li>
+                    <li>Berkolaborasi dengan tim IT untuk kebutuhan 10+ lab komputer</li>
                   </ul>
                 </div>
+                <!-- Link to Related Project -->
+                <a
+                  href="#projects"
+                  @click.prevent="scrollToSection('#projects')"
+                  class="link link-primary mt-3 inline-flex items-center gap-1 text-sm font-ws font-medium"
+                >
+                  <Icon name="tabler:arrow-right-circle" class="w-4 h-4" />
+                  Lihat Project: PTIPD Inventory
+                </a>
               </div>
               <hr />
             </li>
+            <!-- PT. Digital Amore Kriyanesia -->
             <li>
               <hr />
               <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
+                <Icon name="tabler:circle-check-filled" class="h-5 w-5 text-primary" />
               </div>
               <div class="timeline-start timeline-box mb-10 md:text-end">
-                <div class="flex justify-between items-center">
-                  <time class="font-mono italic">2024 - Now</time>
-                  <span class="badge badge-outline font-medium font-sans">Frontend Developer</span>
+                <div class="flex justify-between items-center flex-wrap gap-2">
+                  <time class="font-ws italic text-base">2024 - Now</time>
+                  <span class="badge badge-outline font-ws font-medium">Frontend Developer</span>
                 </div>
-                <div class="flex items-center gap-3 mt-1 justify-beetween">
-                  <img src="/pt-dak-logo.webp" alt="PT. Digital Amore Kriyanesia Logo" class="w-10 h-10 object-contain rounded-md" />
-                  <div class="text-lg font-bold">PT. Digital Amore Kriyanesia</div>
+                <div class="flex items-center gap-3 mt-1 justify-between">
+                  <img
+                    src="/pt-dak-logo.webp"
+                    alt="PT. Digital Amore Kriyanesia Logo"
+                    class="w-10 h-10 object-contain rounded-md"
+                  />
+                  <div class="text-xl font-bold font-ws">PT. Digital Amore Kriyanesia</div>
                 </div>
-                <div class="flex items-center md:justify-end mt-2 md:ml-3">
-                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left">
-                    <li>Merancang desain UI & UX</li>
-                    <li>Pengembangan web untuk perbankan</li>
-                    <li>Berkolaborasi dengan tim backend</li>
+                <div class="mt-3 md:ml-3">
+                  <ul class="list-disc list-inside md:list-outside font-ws text-base sm:text-lg text-left leading-relaxed">
+                    <li>Merancang UI/UX design untuk aplikasi web sektor perbankan</li>
+                    <li>Mengembangkan frontend menggunakan Nuxt.js &amp; Tailwind CSS</li>
+                    <li>Berkolaborasi dengan tim backend dalam integrasi API dan deployment</li>
                   </ul>
                 </div>
               </div>
@@ -105,3 +108,17 @@
     </div>
   </section>
 </template>
+
+<script setup>
+function scrollToSection(id) {
+  const element = document.querySelector(id);
+  const offset = 68;
+  if (element) {
+    const top = element.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({
+      top,
+      behavior: 'smooth',
+    });
+  }
+}
+</script>
