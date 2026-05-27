@@ -53,7 +53,7 @@
                   <a
                     href="#timeline"
                     @click.prevent="scrollToSection('#timeline')"
-                    >Timeline</a
+                    >Experience</a
                   >
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                 <a
                   href="#timeline"
                   @click.prevent="scrollToSection('#timeline')"
-                  >Timeline</a
+                  >Experience</a
                 >
               </li>
               <li>
