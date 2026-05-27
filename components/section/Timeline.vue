@@ -15,7 +15,7 @@
             <div class="flex-shrink-0 w-full md:w-48 pt-1">
               <div class="flex items-center gap-3 md:gap-0">
                 <div class="w-[18px] h-[18px] rounded-full bg-black flex-shrink-0 relative z-10 md:mr-6"></div>
-                <time class="font-ws text-base sm:text-lg italic">2021 - 2024</time>
+                <time class="font-ws font-semibold text-sm sm:text-base tracking-wider">2021 — 2024</time>
               </div>
             </div>
             <div class="flex-1 ml-8 md:ml-0">
@@ -43,7 +43,7 @@
             <div class="flex-shrink-0 w-full md:w-48 pt-1">
               <div class="flex items-center gap-3 md:gap-0">
                 <div class="w-[18px] h-[18px] rounded-full bg-black flex-shrink-0 relative z-10 md:mr-6"></div>
-                <time class="font-ws text-base sm:text-lg italic">2023</time>
+                <time class="font-ws font-semibold text-sm sm:text-base tracking-wider">2023</time>
               </div>
             </div>
             <div class="flex-1 ml-8 md:ml-0">
@@ -79,7 +79,7 @@
             <div class="flex-shrink-0 w-full md:w-48 pt-1">
               <div class="flex items-center gap-3 md:gap-0">
                 <div class="w-[18px] h-[18px] rounded-full bg-black flex-shrink-0 relative z-10 md:mr-6"></div>
-                <time class="font-ws text-base sm:text-lg italic">2024 - Now</time>
+                <time class="font-ws font-semibold text-sm sm:text-base tracking-wider">2024 — Present</time>
               </div>
             </div>
             <div class="flex-1 ml-8 md:ml-0">
