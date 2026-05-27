@@ -16,6 +16,7 @@ export const skills = [
 
   // Database
   { imageUrl: '/logos/mysql.svg', altText: 'MySQL Logo', label: 'MySQL' },
+  { imageUrl: '/logos/pgsql.svg', altText: 'PostgreSQL Logo', label: 'PostgreSQL' },
 
   // Tools
   { imageUrl: '/logos/git.svg', altText: 'Git Logo', label: 'Git' },
