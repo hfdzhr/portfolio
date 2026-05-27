@@ -91,14 +91,14 @@
                 />
                 <div>
                   <h3 class="text-xl sm:text-2xl font-bold font-ws">PT. Digital Amore Kriyanesia</h3>
-                  <span class="badge badge-outline font-ws font-medium mt-1">Frontend Developer</span>
+                  <span class="badge badge-outline font-ws font-medium mt-1">Frontend · Fullstack Developer</span>
                 </div>
               </div>
               <ul class="list-disc list-inside font-ws text-base sm:text-lg leading-relaxed space-y-1 mt-3">
                 <li>Designed UI/UX for banking sector web applications</li>
-                <li>Developed frontend using Nuxt UI &amp; Bootstrap</li>
+                <li>Developed frontend using Nuxt UI &amp; Tailwind CSS</li>
                 <li>Built and integrated backend services with Laravel</li>
-                <li>Collaborated with backend team on API integration and deployment</li>
+                <li>Collaborated with team on API integration and deployment</li>
               </ul>
             </div>
           </div>
