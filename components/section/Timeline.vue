@@ -7,7 +7,7 @@
         </div>
 
         <div class="relative space-y-10 lg:space-y-16">
-          <!-- Garis timeline vertikal -->
+          <!-- Timeline vertical line -->
           <div class="absolute left-[7px] lg:left-[11px] top-2 bottom-2 w-0.5 bg-gray-300"></div>
 
           <!-- Entry 1: SMK Assalaam -->
@@ -30,10 +30,10 @@
                 </div>
               </div>
               <ul class="list-disc list-inside font-ws text-base sm:text-lg leading-relaxed space-y-1">
-                <li>Mempelajari dasar pemrograman &amp; OOP</li>
-                <li>Membangun 5+ project web dengan JavaScript, HTML, &amp; CSS</li>
-                <li>Mengelola database MySQL untuk aplikasi berbasis web</li>
-                <li>Menyelesaikan project akhir tim dengan nilai A</li>
+                <li>Learned fundamentals of programming &amp; OOP</li>
+                <li>Built 5+ web projects using JavaScript, HTML, &amp; CSS</li>
+                <li>Managed MySQL databases for web-based applications</li>
+                <li>Completed team final project with grade A</li>
               </ul>
             </div>
           </div>
@@ -59,9 +59,9 @@
                 </div>
               </div>
               <ul class="list-disc list-inside font-ws text-base sm:text-lg leading-relaxed space-y-1 mt-3">
-                <li>Merancang ERD &amp; Entity Relationship Diagram untuk sistem inventory</li>
-                <li>Mengembangkan REST API menggunakan Express.js &amp; MySQL</li>
-                <li>Berkolaborasi dengan tim IT untuk kebutuhan 10+ lab komputer</li>
+                <li>Designed ERD &amp; Entity Relationship Diagram for inventory system</li>
+                <li>Developed REST API using Express.js &amp; MySQL</li>
+                <li>Collaborated with IT team for 10+ computer lab needs</li>
               </ul>
               <a
                 href="#projects"
@@ -69,7 +69,7 @@
                 class="link link-primary inline-flex items-center gap-1 text-sm font-ws font-medium mt-3"
               >
                 <Icon name="tabler:arrow-right-circle" class="w-4 h-4" />
-                Lihat Project: PTIPD Inventory
+                View Project: PTIPD Inventory
               </a>
             </div>
           </div>
@@ -95,9 +95,9 @@
                 </div>
               </div>
               <ul class="list-disc list-inside font-ws text-base sm:text-lg leading-relaxed space-y-1 mt-3">
-                <li>Merancang UI/UX design untuk aplikasi web sektor perbankan</li>
-                <li>Mengembangkan frontend menggunakan Nuxt.js &amp; Tailwind CSS</li>
-                <li>Berkolaborasi dengan tim backend dalam integrasi API dan deployment</li>
+                <li>Designed UI/UX for banking sector web applications</li>
+                <li>Developed frontend using Nuxt.js &amp; Tailwind CSS</li>
+                <li>Collaborated with backend team on API integration and deployment</li>
               </ul>
             </div>
           </div>
