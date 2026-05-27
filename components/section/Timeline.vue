@@ -13,7 +13,7 @@
           <!-- Entry loop -->
           <div
             v-for="(exp, index) in experiences"
-            :key="exp.id"
+            :key="index"
             class="relative flex flex-col md:flex-row gap-4 md:gap-8"
           >
             <!-- Left: period + dot -->

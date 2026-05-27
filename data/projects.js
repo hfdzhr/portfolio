@@ -1,6 +1,5 @@
 export const projects = [
   {
-    id: 1,
     title: 'PTIPD Inventory',
     image: '/ptipd-website.webp',
     imageAlt: 'PTIPD Inventory Website',
@@ -10,7 +9,6 @@ export const projects = [
     imageLeft: false,
   },
   {
-    id: 2,
     title: 'ArtisanAlley',
     image: '/artisanalley-website.webp',
     imageAlt: 'ArtisanAlley Website',

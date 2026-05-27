@@ -14,7 +14,7 @@
         >
           <AppCardSkill
             v-for="skill in skills"
-            :key="skill.id"
+            :key="index"
             :image-url="skill.imageUrl"
             :alt-text="skill.altText"
             :label="skill.label"

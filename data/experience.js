@@ -1,6 +1,5 @@
 export const experiences = [
   {
-    id: 1,
     period: '2021 — 2024',
     logo: '/smk-assalaam-logo.webp',
     logoAlt: 'SMK Assalaam Bandung Logo',
@@ -15,7 +14,6 @@ export const experiences = [
     projectLink: null,
   },
   {
-    id: 2,
     period: '2023',
     logo: '/ptipd-uin-sgd-logo.webp',
     logoAlt: 'PTIPD UIN Sunan Gunung Djati Logo',
@@ -32,7 +30,6 @@ export const experiences = [
     },
   },
   {
-    id: 3,
     period: '2024 — Present',
     logo: '/pt-dak-logo.webp',
     logoAlt: 'PT. Digital Amore Kriyanesia Logo',

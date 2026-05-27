@@ -36,7 +36,7 @@ import { certificates } from '~/data/certificates'
             :modules="[SwiperEffectCoverflow, SwiperPagination]"
             class="mySwiper"
           >
-            <swiper-slide v-for="cert in certificates" :key="cert.id">
+            <swiper-slide v-for="cert in certificates" :key="index">
               <figure>
                 <img :src="cert.image" :alt="cert.alt" />
                 <figcaption

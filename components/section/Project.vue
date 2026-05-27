@@ -12,7 +12,7 @@
 
         <div
           v-for="(project, index) in projects"
-          :key="project.id"
+          :key="index"
           class="hero-content flex-col"
           :class="[
             index > 0 ? 'mt-5' : '',
