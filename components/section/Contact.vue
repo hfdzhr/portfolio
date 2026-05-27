@@ -22,7 +22,7 @@
                 id="fullName"
                 placeholder="Full Name"
                 v-model="fullName"
-                class="input input-bordered input-primary placeholder-gray-500 w-full my-2"
+                class="input input-bordered input-primary placeholder-gray-600 w-full my-2"
               />
               <ErrorMessage name="fullName" />
               <Field
@@ -31,7 +31,7 @@
                 id="subject"
                 placeholder="Subject"
                 v-model="subject"
-                class="input input-bordered input-primary placeholder-gray-500 w-full my-2"
+                class="input input-bordered input-primary placeholder-gray-600 w-full my-2"
               />
               <ErrorMessage name="subject" />
               <Field
@@ -39,7 +39,7 @@
                 name="message"
                 id="message"
                 v-model="message"
-                class="textarea textarea-primary placeholder-gray-500 my-2 w-full text-base"
+                class="textarea textarea-primary placeholder-gray-600 my-2 w-full text-base"
                 placeholder="Message"
               ></Field>
               <ErrorMessage name="message" />
