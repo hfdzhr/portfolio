@@ -1,6 +1,6 @@
 <template>
   <section id="contact">
-    <div class="bg-base-200 min-h-[80vh] pt-4 lg:pt-10">
+    <div class="min-h-[80vh] pt-4 lg:pt-10">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="divider divider-neutral mb-4 lg:mb-10">
           <h2

@@ -8,7 +8,7 @@
 
         <div class="relative space-y-10 lg:space-y-16">
           <!-- Garis timeline vertikal -->
-          <div class="absolute left-[7px] lg:left-[11px] top-2 bottom-2 w-0.5 bg-gray-200 hidden md:block"></div>
+          <div class="absolute left-[7px] lg:left-[11px] top-2 bottom-2 w-0.5 bg-gray-200"></div>
 
           <!-- Entry 1: SMK Assalaam -->
           <div class="relative flex flex-col md:flex-row gap-4 md:gap-8">
