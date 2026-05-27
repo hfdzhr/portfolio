@@ -1,4 +1,3 @@
 <template>
-  <CursorFollower />
   <NuxtPage />
 </template>
