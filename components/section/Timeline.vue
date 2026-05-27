@@ -1,6 +1,6 @@
 <template>
   <section id="timeline">
-    <div class="bg-base-200 min-h-screen pt-4 lg:pt-10">
+    <div class="bg-base-200 min-h-screen pt-4 lg:pt-10 pb-4 lg:pb-10">
       <div class="container mx-auto px-4 lg:px-8">
         <div class="divider divider-neutral mb-4 lg:mb-10">
           <h2 class="text-left text-4xl sm:text-4xl md:text-4xl lg:text-5xl font-ws font-semibold">EXPERIENCE</h2>
