@@ -6,7 +6,7 @@
   <div :class="{ 'pointer-events-none select-none': isLoading }">
     <AppHeader />
     <main>
-      <SectionHero />
+      <SectionHero :ready="!isLoading" />
       <SectionAbout />
       <SectionSkill />
       <SectionCertificate />

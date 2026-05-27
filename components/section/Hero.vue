@@ -41,23 +41,34 @@
 
 <script setup>
 import { gsap } from 'gsap';
-import { ref, onMounted } from 'vue';
+import { ref, watch } from 'vue';
+
+const props = defineProps({
+  ready: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 // Text for GSAP animation
 const text = 'Hafid Al Azhar';
 const letters = ref(text.split(''));
+const hasAnimated = ref(false);
 
-onMounted(() => {
+function startAnimation() {
+  if (hasAnimated.value) return;
+  hasAnimated.value = true;
+
   // GSAP animation timeline
   const tl = gsap.timeline({
     onStart: () => {
       // Hide fallback text and show animated letters
       document.getElementById('fallback-text').style.display = 'none';
       const lettersElements = document.querySelectorAll('.letter');
-      lettersElements.forEach(letter => {
+      lettersElements.forEach((letter) => {
         letter.style.display = 'inline-block';
       });
-    }
+    },
   });
 
   tl.fromTo(
@@ -92,7 +103,15 @@ onMounted(() => {
       },
       '-=0.2'
     );
-});
+}
+
+// Mulai animasi saat prop ready berubah jadi true
+watch(
+  () => props.ready,
+  (isReady) => {
+    if (isReady) startAnimation();
+  }
+);
 </script>
 
 <style scoped>
