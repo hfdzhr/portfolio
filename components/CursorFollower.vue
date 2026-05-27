@@ -42,8 +42,7 @@ onMounted(() => {
   xTo(window.innerWidth / 2);
   yTo(window.innerHeight / 2);
 
-  // Sembunyikan cursor default
-  document.body.style.cursor = 'none';
+  // Biarkan cursor default tetap terlihat
 
   // Track mouse position
   const onMove = (e) => {
@@ -66,7 +65,6 @@ onMounted(() => {
   // Cleanup
   onUnmounted(() => {
     window.removeEventListener('mousemove', onMove);
-    document.body.style.cursor = '';
     hoverElements.forEach((el) => {
       el.removeEventListener('mouseenter', onHoverIn);
       el.removeEventListener('mouseleave', onHoverOut);
