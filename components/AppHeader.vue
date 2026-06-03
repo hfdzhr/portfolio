@@ -123,10 +123,34 @@
         </div>
       </div>
     </div>
+    <!-- Toast notifikasi download sukses -->
+    <div
+      v-if="showSuccessToast"
+      class="toast toast-bottom toast-end z-[100]"
+    >
+      <div class="alert alert-success">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 shrink-0 stroke-current"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+        <span>CV downloaded successfully!</span>
+      </div>
+    </div>
   </header>
 </template>
 
 <script setup>
+const showSuccessToast = ref(false)
+
 function scrollToSection(id) {
   const element = document.querySelector(id);
   const offset = 68;
@@ -140,7 +164,7 @@ function scrollToSection(id) {
 }
 
 function downloadCV() {
-  const fileUrl = 'cv_hafid_al_azhar.pdf';
+  const fileUrl = 'CV_HAFID_AL_AZHAR_ATS_EN_RXRESUME.pdf';
   const fileName = 'CV HAFID AL AZHAR.pdf';
 
   fetch(fileUrl)
@@ -155,6 +179,11 @@ function downloadCV() {
       downloadLink.click();
 
       URL.revokeObjectURL(fileURL);
+
+      showSuccessToast.value = true
+      setTimeout(() => {
+        showSuccessToast.value = false
+      }, 3000)
     })
     .catch((error) => {
       console.error('Error downloading CV:', error);
